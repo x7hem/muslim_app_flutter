@@ -10,6 +10,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -28,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     SizedBox(height: 20,),
                     itemHome("مسبحة",(){
-                      Navigator.of(context).pushReplacementNamed('/RosaryScreen');
+                      Navigator.of(context).pushNamed('/RosaryScreen');
                     }),
                     SizedBox(height: 20,),
                     itemHome("اذكار",(){
